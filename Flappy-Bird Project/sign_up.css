@@ -1,0 +1,47 @@
+*{
+font-family: cursive;;
+}
+
+body{
+    background-image: url(./img/Records.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color:rgb(104, 237, 43);
+    margin-top: 20vh;
+    font-size:40px;
+}
+form{
+    font-size:30px;
+    text-align: center;
+    color:rgb(104, 237, 43);;
+    margin-top: 10vh;
+}
+input{
+    margin: 8px 8px 8px 8px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    border-color:rgb(104, 237, 43); ;
+    color:rgb(104, 237, 43);;
+    padding: 6px 6px 6px 6px;
+    font-size:large;
+}
+.error{
+color:rgb(209, 44, 88);
+font-size: large;
+font-weight: bold;
+}
+button{
+background-color: rgb(104, 237, 43);
+color:rgb(255, 255, 255);
+border-color: rgb(104, 237, 43);;
+border-radius: 4px;
+padding: 10px 30px 15px 30px;
+font-size: x-large;
+text-shadow: 2px 2px 4px #000000;
+margin: 8px 8px 8px 8px;
+}
+

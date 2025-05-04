@@ -1,0 +1,38 @@
+*{
+    font-family: cursive;
+}
+
+body{
+    background-image: url(./img/Records.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+h1{
+    color:rgb(209, 44, 88);
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: large;
+    top: 15vh;
+}
+
+.Play {
+    padding: 8px;
+    margin: 5px 5px 5px 0;
+    border-radius: 3px;
+    background-color: rgb(209, 44, 88);
+    border: solid .5px rgb(209, 44, 88);
+    color: #ffffff;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: none;
+  }

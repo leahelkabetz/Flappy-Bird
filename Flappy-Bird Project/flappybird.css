@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+  ;
+}
+
+body {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/background.jpg);
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  z-index: 0;
+
+}
+
+.header {
+  box-sizing: content-box;
+  background-color: #ffffff;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heart {
+  height: 4vh;
+  width: 4.5vh;
+  position: fixed;
+  top: 0;
+  z-index: 6;
+}
+
+#heart1 {
+  right: 4vh;
+}
+
+#heart2 {
+  right: 9vh;
+}
+
+#heart3 {
+  right: 14vh;
+}
+
+.hide {
+  display: none;
+}
+
+#playerScore {
+  color: rgb(209, 44, 88);
+  font-weight: bold;
+  font-size: x-large;
+  text-align: center;
+  z-index: 7;
+}
+
+#pipesUp {
+  /*height: 40vh;*/
+  width: 10vh;
+  position: absolute;
+  right: 0vh;
+  top: 0;
+  z-index: 1;
+  transform: translateX(0px);
+
+}
+
+#pipesDown {
+  /*height: 30vh;*/
+  width: 10vh;
+  position: absolute;
+  right: 0vh;
+  bottom: 0;
+  z-index: 1;
+  transform: translateX(0px);
+
+}
+
+#bird {
+  width: 6vh;
+  height: 6vh;
+  position: absolute;
+  top: 48vh;
+  left: 20vh;
+  z-index: 2;
+  transform: translateY(0px);
+
+}
+
+
+.blink_me {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.gameOver {
+  background-image: url(./img/gameOver.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position:absolute;
+  top: 20vh;
+  left: 65vh;
+  height: 60vh;
+  width: 60vh;
+  z-index: 9;
+  box-shadow: 5px 8px 16px 5px rgba(255, 255, 255, 0.2);
+}
+.gameOverOptions {
+  position: fixed;
+  top: 65vh;
+  z-index: 10;
+  list-style-type: none;
+  margin: 5vh 5vh 5vh 5vh;
+  padding: 3px;
+  /*width: 100%;*/
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 5px;
+  text-decoration: none;
+  color: rgb(15, 148, 172);
+}
+
+.listRecords{
+  left: 85vh;
+}
+.playAgain{
+  left: 75vh;
+}
+
+.blurGameOver{
+  position: absolute;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  /* background-repeat: repeat-x;
+  background-size: 100% 100%; */
+}
